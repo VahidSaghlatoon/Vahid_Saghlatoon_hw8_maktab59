@@ -1,6 +1,6 @@
 package question3;
 
-public class Runner {
+public class ReThrowException {
     public static void main(String[] args) {
 
         try {
