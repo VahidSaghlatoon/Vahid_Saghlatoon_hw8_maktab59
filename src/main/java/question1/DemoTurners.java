@@ -8,5 +8,7 @@ public class DemoTurners {
         page.turn();
         Turner pancake = new Pancake();
         pancake.turn();
+        Turner lamp = new Lamp();
+        lamp.turn();
     }
 }
