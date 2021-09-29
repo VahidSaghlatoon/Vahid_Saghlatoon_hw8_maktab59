@@ -53,4 +53,25 @@ public class ResultDao {
         }
     }
 
+    public void readMaxPoint() {
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        try {
+            connection = DbConfig.getConnection();
+            preparedStatement = connection.prepareStatement("SELECT team_id ,sum(point) AS 'point' FROM results r GROUP BY team_id \n" +
+                    "HAVING `point` =(SELECT max(point) AS 'max' FROM (SELECT sum(point) AS 'point' FROM results r GROUP BY team_id) AS item) ;");
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                System.out.println("team id : " + resultSet.getInt(1));
+                System.out.println("sum point : " + resultSet.getInt(2));
+                System.out.println("----------------");
+            }
+            connection.close();
+            preparedStatement.close();
+
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
+
 }
