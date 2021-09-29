@@ -1,6 +1,5 @@
 package SoccerLeague;
 
-import SoccerLeague.dao.ResultDao;
 import SoccerLeague.service.CoachService;
 import SoccerLeague.service.PlayerService;
 import SoccerLeague.service.ResultService;
@@ -24,7 +23,6 @@ public class Main {
         test.menu();
 
 
-
     }
 
 
@@ -34,7 +32,8 @@ public class Main {
             System.out.print("1--> coach max with max salary\n" +
                     "2--> player max salary by season\n" +
                     "3--> city team count\n" +
-                    "4--> team by  point\n" +
+                    "4--> teams by  point\n" +
+                    "5--> team by max point\n" +
                     "0--> exit\n" +
                     "--> ");
             int choice = input.nextInt();
@@ -51,6 +50,9 @@ public class Main {
                     break;
                 case 4:
                     resultService.readBypoint();
+                    break;
+                case 5:
+                    resultService.readTeamByMaxPoint();
                     break;
                 case 0:
                     check = false;
