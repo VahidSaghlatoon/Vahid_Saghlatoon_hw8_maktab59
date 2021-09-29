@@ -17,6 +17,10 @@ public class Result {
         this.goalAgainst = goalAgainst;
     }
 
+    public Result() {
+
+    }
+
     public int getResultId() {
         return resultId;
     }
