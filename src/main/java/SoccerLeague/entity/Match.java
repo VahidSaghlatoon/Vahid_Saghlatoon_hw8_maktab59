@@ -1,8 +1,8 @@
-package question4.entity;
+package SoccerLeague.entity;
 
 import java.util.Date;
 
-public class match {
+public class Match {
     private int matchId;
     private Date matchDate;
     private int stadiumId;
@@ -15,7 +15,7 @@ public class match {
     private int teamHomePoints;
     private int teamAwayPoints;
 
-    public match(int matchId, Date matchDate, int stadiumId,
+    public Match(int matchId, Date matchDate, int stadiumId,
                  int teamHomeId, int teamAwayId, int ballId,
                  int teamHomeGoals, int teamAwayGoals, int refereeId, int teamHomePoints, int teamAwayPoints) {
         this.matchId = matchId;

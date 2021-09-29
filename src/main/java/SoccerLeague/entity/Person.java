@@ -1,8 +1,8 @@
-package question4.entity;
+package SoccerLeague.entity;
 
 import java.util.Date;
 
-public class person {
+public class Person {
     private String name ;
     private int teamId ;
     private double salary ;
@@ -10,7 +10,10 @@ public class person {
     private Date hireDate;
     private Date hireExpiryDate ;
 
-    public person(String name, int teamId, double salary, double price, Date hireDate, Date hireExpiryDate) {
+    public Person() {
+    }
+
+    public Person(String name, int teamId, double salary, double price, Date hireDate, Date hireExpiryDate) {
         this.name = name;
         this.teamId = teamId;
         this.salary = salary;

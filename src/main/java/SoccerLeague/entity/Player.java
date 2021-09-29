@@ -1,8 +1,8 @@
-package question4.entity;
+package SoccerLeague.entity;
 
 import java.util.Date;
 
-public class Player extends person{
+public class Player extends Person {
     private int playerId ;
 
     public Player(int playerId, String name, int teamId, double salary, double price, Date hireDate, Date hireExpiryDate) {

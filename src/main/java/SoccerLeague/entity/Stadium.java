@@ -1,22 +1,22 @@
-package question4.entity;
+package SoccerLeague.entity;
 
-public class team {
-    private int teamId;
+public class Stadium {
+    private int stadiumId ;
     private String name ;
-    private String cityName;
+    private String cityName ;
 
-    public team(int teamId, String name, String cityName) {
-        this.teamId = teamId;
+    public Stadium(int stadiumId, String name, String cityName) {
+        this.stadiumId = stadiumId;
         this.name = name;
         this.cityName = cityName;
     }
 
-    public int getTeamId() {
-        return teamId;
+    public int getStadiumId() {
+        return stadiumId;
     }
 
-    public void setTeamId(int teamId) {
-        this.teamId = teamId;
+    public void setStadiumId(int stadiumId) {
+        this.stadiumId = stadiumId;
     }
 
     public String getName() {

@@ -1,6 +1,6 @@
-package question4.entity;
+package SoccerLeague.entity;
 
-public class result {
+public class Result {
     private int resultId ;
     private int teamId;
     private int matchId;
@@ -8,7 +8,7 @@ public class result {
     private int goalFor;
     private int goalAgainst;
 
-    public result(int resultId, int teamId, int matchId, int point, int goalFor, int goalAgainst) {
+    public Result(int resultId, int teamId, int matchId, int point, int goalFor, int goalAgainst) {
         this.resultId = resultId;
         this.teamId = teamId;
         this.matchId = matchId;

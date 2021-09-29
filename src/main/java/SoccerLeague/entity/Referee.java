@@ -1,10 +1,10 @@
-package question4.entity;
+package SoccerLeague.entity;
 
-public class referee {
+public class Referee {
     private int refereeId;
     private String name ;
 
-    public referee(int refereeId, String name) {
+    public Referee(int refereeId, String name) {
         this.refereeId = refereeId;
         this.name = name;
     }
