@@ -31,4 +31,8 @@ public class ResultService {
     public void readBypoint(){
         resultDao.read();
     }
+
+    public void readTeamByMaxPoint(){
+        resultDao.readMaxPoint();
+    }
 }
