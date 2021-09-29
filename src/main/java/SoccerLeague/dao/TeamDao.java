@@ -18,6 +18,7 @@ public class TeamDao {
             while (resultSet.next()) {
                 System.out.println(" city : " + resultSet.getString(1));
                 System.out.println(" team count : " + resultSet.getInt(2));
+                System.out.println("-------------");
             }
             connection.close();
             preparedStatement.close();
